@@ -1,2 +1,0 @@
-# WEB-DEVELOPMENT-INTERNSHIP-LAB-Elevate-Lab
-Task 1
