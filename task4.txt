@@ -1,0 +1,122 @@
+index.html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Web Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>My Website</h1>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="content">
+      <h2>Welcome</h2>
+      <p>This is a desktop layout that will become mobile-friendly with media queries.</p>
+    </section>
+    <aside class="sidebar">
+      <h3>Sidebar</h3>
+      <p>Extra content goes here.</p>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 My Website</p>
+  </footer>
+</body>
+</html>
+
+style.css
+
+/* Base (Desktop) styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.content {
+  width: 70%;
+}
+
+.sidebar {
+  width: 25%;
+  background: #f4f4f4;
+  padding: 1rem;
+}
+
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+/*  Responsive Styles */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .content,
+  .sidebar {
+    width: 100%;
+  }
+
+  .content h2,
+  .sidebar h3 {
+    font-size: 1.2rem;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .header, .footer {
+    padding: 0.5rem;
+  }
+}
